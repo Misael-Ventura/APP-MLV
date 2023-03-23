@@ -1,0 +1,15 @@
+<div id="slider">
+  <ngb-carousel>
+    <ng-template *ngFor="let item of slider" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="item.image" alt="Random first slide" />
+        <div id="slippry">
+          <h3 class="left pad_200">First slide label</h3>
+          <p class="left top_375">
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

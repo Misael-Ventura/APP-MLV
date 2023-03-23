@@ -1,0 +1,35 @@
+<!-- servicios -->
+<div class="pad_200">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="center main-title">Nuestro Contenido</h1>
+              <h3 class="center">El cambio lo tienes en tus manos</h3>
+            </div>
+          </div>
+
+          <br /><br /><br />
+          <div class="row">
+            <div class="col-xl-4 center" *ngFor="let slider of contenido">
+              <img [src]="slider.image" alt="event" class="rounded-circle" />
+              <h2>{{ slider.title }}</h2>
+              <p>
+                {{ slider.descripcion }}
+              </p>
+              <form action="">
+                <button>leer mas &raquo;</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

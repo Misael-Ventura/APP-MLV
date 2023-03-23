@@ -1,0 +1,109 @@
+a{
+  margin: 0px;
+  padding: 0x;}
+
+a:hover{
+  color: #ff6600;
+}
+h1,h2,h3,h4,h5,h6{
+  color: #060a0f;
+}
+
+p{
+  color: #494949;
+}
+
+.tSlow, .rounded-circle, input,select,option,textarea, button, nav, nav .logo img, nav ul,
+nav ul .link-active a:after, nav ul li a, nav ul li a:before, nav ul li a:after, nav ul li a:hover:after,
+.diamante, .grid-item, footer a, .copy a, .tumblr, .social-networks li, .social-networks li i,.nav-overlay {
+  -webkit-transition: all 0.5s ;
+  -o-transition:all 0.5s ;
+  transition: all 0.5s;
+}
+.pad_200{
+  padding: 200px 0px;
+}
+.center{
+  text-align: center;
+  margin: 0px auto;
+}
+/* estilo titulo */
+.main-title{
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+}
+.rounded-circle{
+  width: 250px;
+  height: 250px;
+  -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -o-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%) ;
+}
+.rounded-circle:hover{
+  clip-path:polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%) ;
+}
+/* efecto diamante */
+
+#slider {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+      }
+      /* contenido dentro de navbar */
+  #slippry {
+      position: relative; }
+      #slippry h1, #slippry h2, #slippry h3, #slippry h4, #slippry h5, #slippry h6, #slippry p, #slippry a, #slippry button {
+          position: absolute; }
+      #slippry p {
+          width: 600px; }
+      #slippry .white_bg {
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 5px 10px; }
+      #slippry .left {
+          left: 200px; }
+      #slippry .right {
+          right: 200px; }
+      #slippry .top_250 {
+          top: 250px; }
+      #slippry .top_300 {
+          top: 300px; }
+      #slippry .top_350 {
+          top: 350px; }
+      #slippry .top_375 {
+          top: 375px; }
+      #slippry .top_400 {
+          top: 400px; }
+      #slippry .top_450 {
+          top: 450px; }
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+
+  padding: 0px 30px 0 30px;
+
+}
+#btn_slider{
+  background-color: transparent;
+  height: auto;
+  width: auto;
+
+}
+#icon_slider{
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+#icon_slider:hover{
+  opacity: 1;
+  background-color: black;
+  color: white;
+}

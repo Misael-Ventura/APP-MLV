@@ -1,0 +1,33 @@
+#slippry {
+  position: relative; }
+  #slippry h1, #slippry h2, #slippry h3, #slippry h4, #slippry h5, #slippry h6, #slippry p, #slippry a, #slippry button {
+      position: absolute; }
+  #slippry p {
+      width: 600px; }
+  #slippry .white_bg {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 5px 10px; }
+  #slippry .left {
+      left: 200px; }
+  #slippry .right {
+      right: 200px; }
+  #slippry .top_250 {
+      top: 250px; }
+  #slippry .top_300 {
+      top: 300px; }
+  #slippry .top_350 {
+      top: 350px; }
+  #slippry .top_375 {
+      top: 375px; }
+  #slippry .top_400 {
+      top: 400px; }
+  #slippry .top_450 {
+      top: 450px; }
+      /* portafolio */
+#slider {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+      }
