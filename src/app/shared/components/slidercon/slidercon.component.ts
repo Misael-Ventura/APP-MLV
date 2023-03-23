@@ -24,7 +24,6 @@ export class SliderconComponent implements OnInit {
   title: 'Colores',
   descripcion: 'Aprende a decir cuales son tus colores favoritos para poder expresarlo'
 }]
-
   ngOnInit(): void {
   }
 
