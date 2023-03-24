@@ -7,6 +7,7 @@ import { SabiasComponent } from './sabias/sabias.component';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutModule } from '../layout/layout.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LayoutModule } from '../layout/layout.module';
     CommonModule,
     PagesRoutingModule,SharedModule,
     NgbModule,
-    LayoutModule
+    LayoutModule,
+    AuthModule
   ]
 })
 export class PagesModule { }

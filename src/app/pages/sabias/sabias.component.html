@@ -1,2 +1,177 @@
-<p>sabias works!</p>
+<br /><br /><br />
+<div class="pad_200">
+  <div id="portafolio">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="center main-title">Teoria y Historia</h1>
+          <h3 class="center">
+            Comencemos a nutrir <strong>el conocimiento</strong>
+          </h3>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-item">
+          <a href="sabias/Sabias1.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-01"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias2.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-02"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias3.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-03"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a
+            href="../../../assets/img/Teoria.jpg"
+            data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-05"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias5.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-06"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias6.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-07"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias7.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-08"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias8.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-09"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias1.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-10"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias2.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-12"
+          /></a>
+        </div>
+
+        <div class="grid-item">
+          <a href="sabias/Sabias1.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-01"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias2.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-02"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias3.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-03"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias4.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-05"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias5.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-06"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias6.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-07"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias7.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-08"
+          /></a>
+        </div>
+        <div class="grid-item">
+          <a href="sabias/Sabias8.jpg" data-lightbox="portafolio-item"
+            ><img
+              src="../../../assets/img/Teoria.jpg"
+              alt="Blockparadox-potafolio-09"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/slippry.min.js"></script>
+<script src="/js/lightbox.min.js"></script>
+<script>
+  $(document).ready(function () {
+    //imagenes
+    var dn_width = $(".grid-item").width();
+    $(".grid-item").css({
+      height: dn_width,
+    });
+
+    // activar ligthbox
+    lightbox.option({
+      resizeDuration: 200,
+      disableScrolling: true,
+    });
+
+    //hacer scroll de navegacion
+    var slider = $("#slider").height();
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= $("#nosostros").offset().top - 320) {
+        $("#nav").addClass("nav-overlay");
+      } else {
+        $("#nav").removeClass("nav-overlay");
+      }
+    });
+    $(window).scroll();
+  });
+</script>
+
 <app-footer></app-footer>

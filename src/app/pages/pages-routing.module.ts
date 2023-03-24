@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SabiasComponent } from './sabias/sabias.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [{
   path: 'home',
@@ -12,7 +14,15 @@ const routes: Routes = [{
   component:SabiasComponent
 },
 {
-  path:'**',
+  path:'login',
+  component:LoginComponent
+},
+{
+  path:'registar',
+  component:RegisterComponent
+},
+{
+  path: '**',
   redirectTo:'home'
 }
 ];
