@@ -9,22 +9,7 @@ const routes: Routes = [{
   path: 'home',
   component:HomeComponent
 },
-{
-  path:'sabias',
-  component:SabiasComponent
-},
-{
-  path:'login',
-  component:LoginComponent
-},
-{
-  path:'registar',
-  component:RegisterComponent
-},
-{
-  path: '**',
-  redirectTo:'home'
-}
+
 ];
 
 @NgModule({

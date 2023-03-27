@@ -2,9 +2,22 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
-  path:'',
-  loadChildren: ()=> import('./pages/pages.module').then((m) => m.PagesModule)
-}];
+  path: 'home',
+  loadChildren: ()=> import('./pages/home/home.module').then ((m)=> m.HomeModule),
+},
+{
+  path: 'sabias',
+  loadChildren: ()=> import('./pages/sabias/sabias.module').then ((m) => m.SabiasModule)
+},
+{
+  path: 'login',
+  loadChildren: ()=> import('./pages/auth/login/login.module').then ((m) => m.LoginModule)
+},
+{
+  path:'**',
+  redirectTo: 'home'
+}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

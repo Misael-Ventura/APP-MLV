@@ -2,16 +2,31 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xl-2">
-        <a href="http://www.blackparadox.com" class="logo">
-          <img src="img/logo_2.png" alt="Logo de aplicacion" class="nav" />
+        <a routerLink="home" class="logo">
+          <img
+            src="../../../assets/img/logo-app.png"
+            alt="Logo de aplicacion"
+            class="nav"
+          />
         </a>
       </div>
       <div class="col-xl-10">
         <ul>
-          <li class="link-active"><a href="index.html">inicio</a></li>
-          <li><a href="index.html#nosotros">nosotros</a></li>
-          <li><a href="potafolio.html">Sabias que...</a></li>
-          <li><a href="login.html">Oyentes</a></li>
+          <li
+            class="link-active"
+            routerLinkActive="link-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a routerLink="home">inicio</a>
+          </li>
+          <li routerLinkActive="link-active">
+            <a routerLink="sabias" routerLinkActive="link-active"
+              >Sabias que...</a
+            >
+          </li>
+          <li routerLinkActive="link-active">
+            <a routerLink="login">Oyentes</a>
+          </li>
         </ul>
       </div>
     </div>
