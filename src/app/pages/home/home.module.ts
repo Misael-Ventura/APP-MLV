@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
-import { SliderComponent } from '../../shared/components/slider/slider.component';
+
+
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LayoutModule } from 'src/app/layout/layout.module';
+import { HomeComponent } from './home.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { LayoutModule } from 'src/app/layout/layout.module';
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    LayoutModule
+    LayoutModule,
+
   ]
 })
 export class HomeModule { }

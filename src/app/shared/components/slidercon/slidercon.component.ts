@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContenidoService } from 'src/app/core/service/contenido.service';
 
 @Component({
   selector: 'app-slidercon',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderconComponent implements OnInit {
 
-  constructor() { }
+  constructor(private contenidoService: ContenidoService) { }
 
-  contenido = [{
+  contenido =  [{
     image: '../../../../assets/img/Abecedario.jpg',
     title: 'Abecedario',
     descripcion: 'En esta seccion vas a poder comprer y aprender el abecedario en español latinoamericano'
@@ -23,8 +24,15 @@ export class SliderconComponent implements OnInit {
   image: '../../../../assets/img/Colores.jpg',
   title: 'Colores',
   descripcion: 'Aprende a decir cuales son tus colores favoritos para poder expresarlo'
-}]
+},
+
+]
   ngOnInit(): void {
   }
-
+  get data(){
+    return this.contenidoService.data;
+  }
+  getURI(nombre:string){
+    return encodeURI(nombre);
+  }
 }

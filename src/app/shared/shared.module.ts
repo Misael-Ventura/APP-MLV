@@ -1,9 +1,12 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SliderComponent } from './components/slider/slider.component';
 import { DiamanteComponent } from './components/diamante/diamante.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderconComponent } from './components/slidercon/slidercon.component';
+import { CoreModule } from '../core/core.module';
+import { ContenidoComponent } from './components/slidercon/contenido/contenido.component';
 
 
 
@@ -11,11 +14,14 @@ import { SliderconComponent } from './components/slidercon/slidercon.component';
   declarations: [
     SliderComponent,
     DiamanteComponent,
-    SliderconComponent
+    SliderconComponent,
+    ContenidoComponent
   ],
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    RouterModule,
+    CoreModule
   ],
   exports: [SliderComponent,DiamanteComponent,SliderconComponent]
 })

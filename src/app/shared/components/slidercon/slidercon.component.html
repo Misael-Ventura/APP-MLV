@@ -15,6 +15,7 @@
             </div>
           </div>
           <br /><br /><br />
+
           <div class="row">
             <div class="col-xl-4 center" *ngFor="let slider of contenido">
               <img [src]="slider.image" alt="event" class="rounded-circle" />
@@ -23,7 +24,9 @@
                 {{ slider.descripcion }}
               </p>
               <form action="">
-                <button class="btn">leer mas &raquo;</button>
+                <button class="btn" [routerLink]="'contenido/' + slider.title">
+                  leer mas &raquo;
+                </button>
               </form>
             </div>
           </div>
