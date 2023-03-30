@@ -17,7 +17,7 @@
           <br /><br /><br />
 
           <div class="row">
-            <div class="col-xl-4 center" *ngFor="let slider of contenido">
+            <div class="col-xl-4 center" *ngFor="let slider of data.slider_uno">
               <img [src]="slider.image" alt="event" class="rounded-circle" />
               <h2>{{ slider.title }}</h2>
               <p>
@@ -44,14 +44,26 @@
           </div>
           <br /><br /><br />
           <div class="row">
-            <div class="col-xl-4 center" *ngFor="let slider of contenido">
-              <img [src]="slider.image" alt="event" class="rounded-circle" />
-              <h2>{{ slider.title }}</h2>
+            <div
+              class="col-xl-4 center"
+              *ngFor="let slider_dos of data.slider_dos"
+            >
+              <img
+                [src]="slider_dos.image"
+                alt="event"
+                class="rounded-circle"
+              />
+              <h2>{{ slider_dos.title }}</h2>
               <p>
-                {{ slider.descripcion }}
+                {{ slider_dos.descripcion }}
               </p>
               <form action="">
-                <button>leer mas &raquo;</button>
+                <button
+                  class="btn"
+                  [routerLink]="'contenido/' + slider_dos.title"
+                >
+                  leer mas &raquo;
+                </button>
               </form>
             </div>
           </div>
@@ -68,15 +80,25 @@
           </div>
           <br /><br /><br />
           <div class="row">
-            <div class="col-xl-4 center" *ngFor="let slider of contenido">
-              <img [src]="slider.image" alt="event" class="rounded-circle" />
-              <h2>{{ slider.title }}</h2>
+            <div
+              class="col-xl-4 center"
+              *ngFor="let slider_tres of data.slider_tres"
+            >
+              <img
+                [src]="slider_tres.image"
+                alt="event"
+                class="rounded-circle"
+              />
+              <h2>{{ slider_tres.title }}</h2>
               <p>
-                {{ slider.descripcion }}
+                {{ slider_tres.descripcion }}
               </p>
-              <form action="">
-                <button>leer mas &raquo;</button>
-              </form>
+              <button
+                class="btn"
+                [routerLink]="'contenido/' + slider_tres.title"
+              >
+                leer mas &raquo;
+              </button>
             </div>
           </div>
         </div>
@@ -92,14 +114,26 @@
           </div>
           <br /><br /><br />
           <div class="row">
-            <div class="col-xl-4 center" *ngFor="let slider of contenido">
-              <img [src]="slider.image" alt="event" class="rounded-circle" />
-              <h2>{{ slider.title }}</h2>
+            <div
+              class="col-xl-4 center"
+              *ngFor="let slider_cuarto of data.slider_cuarto"
+            >
+              <img
+                [src]="slider_cuarto.image"
+                alt="event"
+                class="rounded-circle"
+              />
+              <h2>{{ slider_cuarto.title }}</h2>
               <p>
-                {{ slider.descripcion }}
+                {{ slider_cuarto.descripcion }}
               </p>
               <form action="">
-                <button class="contenido">leer mas &raquo;</button>
+                <button
+                  class="btn"
+                  [routerLink]="'contenido/' + slider_cuarto.title"
+                >
+                  leer mas &raquo;
+                </button>
               </form>
             </div>
           </div>
